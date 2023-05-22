@@ -218,7 +218,7 @@ ol img {
     width: 2vw;
 }
 
-aside > *:not(h2) {
+aside > *:not(h2,sup,var) {
     margin-left: 4ch;
 }
 
@@ -234,3 +234,29 @@ main > section > div > div > img {
 main > section > div > div:hover > img {
     animation: rotate 3s linear infinite;
 }
+
+table {
+    margin: 25px auto;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+    border-bottom: 2px solid #00cccc;
+}
+table tr:hover {
+    background: #f4f4f4;
+}
+table tr:hover td {
+    color: #555;
+}
+table th, table td {
+    color: #999;
+    border: 1px solid #eee;
+    padding: 12px 35px;
+    border-collapse: collapse;
+}
+table th {
+    background: #00cccc;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+  
